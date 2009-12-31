@@ -1,0 +1,15 @@
+;; avl.clj
+;;
+;; This package provides a semi-optimized AVL tree. AVL Trees are
+;; represented as structure that have four 'elements': the data, left
+;; child, right child, and height.
+;;
+;; Methods Exported:
+;; (avl-insert tree val < >)  - Inserts into the AVL tree using the given < and > operators.
+;; (avl-insert tree val)      - Inserts into the AVL tree using the default < and > operators
+;; (avl-lookup tree val < >)  - Returns true if val is in the AVL tree using the given < and > operators.
+;; (avl-loookup tree val)     - Returns true if val is in the AVL tree using the default < and > operators.
+;; (avl-remove tree val < >)  - Removes from the AVL tree using the given < and > operators.
+;; (avl-remove tree val)      - Removes from the AVL tree using the default < and > operators.
+;;
+;; Written by: Nathaniel Flath
