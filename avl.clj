@@ -73,14 +73,14 @@
   ([tree val < >]
      (if tree
        (cond
-        (< (tree :data) val) (tree-lookup (tree :right) val)
-        (> (tree :data) val) (tree-lookup (tree :left) val)
+        (< (tree :data) val) (avl-lookup (tree :right) val)
+        (> (tree :data) val) (avl-lookup (tree :left) val)
         true true)
        nil))
-  ([tree val] (tree-lookup tree val < >)))
+  ([tree val] (avl-lookup tree val < >)))
 
 (defn avl-insert
-  "Inserts a new node into an AVL tree"p
+  "Inserts a new node into an AVL tree"
   ([tree val < >]
      (if tree
        (balance
